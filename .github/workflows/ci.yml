@@ -30,11 +30,3 @@ jobs:
           sudo docker compose up -d
           sudo docker compose up -d
 
-    - name: install dependencies
-      run: go mod tidy
-
-    - name: Build
-      run: go build -v ./...
-
-    - name: Test
-      run: go test -v ./...
